@@ -1,0 +1,46 @@
+<canvas id="canvas"></canvas>
+<div class="panel" id="createpanel">
+	<div class="panel-header">new map</div>
+	<div class="panel-body">
+		name <input type="text" id="createmapname" placeholder="newmap">
+		width <input type="number" id="createmapwidth" value="20">
+		height <input type="number" id="createmapheight" value="20"><br><br>
+		<div class="button" id="createmapbutton">create</div>
+	</div>
+</div>
+<div class="panel" id="toolpanel">
+	<div class="panel-header">panel</div>
+	<div class="panel-body">
+		<div class="button" id="addtool"><img id="addtoolimage"></div>
+		<div class="button" id="savejsonbutton"><img id="savejsonimage"></div>
+		<div class="button" id="savemapbutton"><img id="savemapimage"></div>
+		<div class="button" id="loadjsonbutton"><img id="loadjsonimage"></div>
+		<select id="layers" size="5" multiple></select>
+		<div class="button" id="addlayerbutton"><img id="addlayerimage"></div>
+		<div id="preferences">
+			<input class="check" type="checkbox" id="drawgrid" checked>draw grid
+		</div>
+		<div id="toolbox">
+		</div>
+		<br><br><br>
+	</div>
+</div>
+<div class="panel" id="savedialog">
+	<div class="panel-header">save map</div>
+	<div class="panel-body">
+		<input type="text" id="mapname">
+		<div class="button" id="savemapdialogbutton">save</div>
+		<div class="button" id="cancelmapdialogbutton">cancel</div>
+	</div>
+</div>
+<div class="panel" id="addtooldialog">
+	<div class="panel-header">add tool</div>
+	<div class="panel-body">
+		<img id="toolimage" />
+		<input type="file" id="toolimagefile" hidden><br>
+		<div class="button" id="selectimagebutton">select image</div>
+		<div class="button" id="addtoolbutton">add</div>
+		<div class="button" id="canceltoolbutton">cancel</div>
+	</div>
+</div>
+<script src="/script.js"></script>

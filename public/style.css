@@ -1,0 +1,114 @@
+body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+canvas {
+	margin: 0;
+	float: left;
+	user-select: none;
+	-webkit-user-select: none;
+	cursor: default;
+}
+
+.button { 
+	border: 1px solid rgba(40, 60, 90, 1.0);
+	border-radius: 2px;
+	display: inline-block;
+	background-color: rgba(100, 120, 150, 0.9);
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.panel {
+	width: 160px;
+	display: none;
+	float: left;
+	position: absolute;
+	border: 1px solid rgba(100, 150, 225, 0.85);
+	border-radius: 2px;
+	box-shadow: 1px 1px 10px 1px rgba(100, 150, 225, 0.85);
+	background-color: rgba(100, 150, 225, 0.85);
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}
+
+.panel-header {
+	width: 100%;
+	height: 24px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	text-shadow: 0 0 8px #000;
+	user-select: none;
+	-webkit-user-select: none;
+	cursor: default;
+	background-color: rgba(100, 120, 150, 0.4);
+}
+
+.panel-body {
+	padding: 4px;
+}
+
+#toolbox {
+	display: block;
+	float: none;
+}
+
+#toolbox label {
+	margin: 4px;
+	float: left;
+	width: 40px;
+	height: 40px;
+	background-color: rgba(100, 120, 150, 0.9);
+	border-radius: 2px;
+	border: 1px solid rgba(40, 60, 90, 1.0);
+	cursor: pointer;
+	overflow: auto;
+}
+
+#toolbox label:hover {
+	background-color: rgba(120, 140, 170, 0.9);;
+}
+
+#toolbox label span {
+	user-select: none;
+	-webkit-user-select: none;
+	text-align: center;
+	font-size: 32px;
+	height: 100%;
+	width: 100%;
+	display:block;
+}
+
+#toolbox input[type=radio] {
+	display: none;
+	position: absolute;
+	top: -32px;
+}
+
+#toolbox input[type=radio]:checked + span{
+	background-color: rgba(60, 80, 110, 0.9);;
+}
+
+#toolimage {
+	margin: auto;
+	width: 64px;
+	height: 64px;
+	border: 1px solid silver;
+}
+
+.check {
+	float: none;
+}
+
+#layers {
+	width: 100%;
+}

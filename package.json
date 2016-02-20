@@ -1,0 +1,17 @@
+{
+  "name": "tilemapeditor",
+  "version": "1.0.0",
+  "description": "tile map editor",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/takeshimitsuiami/tilemapeditor.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "ejs-locals": "^1.0.2",
+    "express": "^4.13.4",
+    "mongodb": "^1.4.40",
+    "monk": "^1.0.1",
+    "multiparty": "^4.1.2"
+  }
+}

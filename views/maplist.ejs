@@ -1,0 +1,5 @@
+<% layout('layout') %>
+<a href="/map/new">new map</a><br>
+<% maps.forEach(function(map) { %>
+<a href="/map/<%= map._id %>"><%= map.name %></a> <a href="/map/delete/<%= map._id %>">[delete]</a><br>
+<% }); %>

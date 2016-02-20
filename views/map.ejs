@@ -1,0 +1,8 @@
+<% layout('layout') %>
+<script>var newmap = false;</script>
+<% include editor %>
+<script>
+parsejson('<%- JSON.stringify(map) %>');
+draw();
+</script>
+
